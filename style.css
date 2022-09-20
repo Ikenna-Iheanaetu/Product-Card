@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f2ebe3;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 15% 20%;
+  display: flex-box;
+}
+
+.container .card {
+  border-radius: .5rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card .img {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container .card .img .image {
+  height: 550px;
+  width: 450px;
+  display: flex inline-block;
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.container .card .text {
+  padding: 30px 35px;
+}
+
+.container .card .text h4 {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #6c7289;
+  margin-bottom: 10px;
+}
+
+.container .card .text h1 {
+  font-size: 45px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: #1c232b;
+  margin-bottom: 20px;
+}
+
+.container .card .text p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #6c7289;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.container .card .text .money {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .text .money h1 {
+  color: #3c8067;
+}
+
+.container .card .text .money span {
+  display: inline-block;
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-decoration: line-through;
+  font-weight: 500;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
+.container .card .text .button {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .text .button .btn {
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  background-color: #3c8067;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.container .card .text .button .btn:hover {
+  background-color: #0e4e36;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    padding: 20% 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .card {
+    overflow: hidden;
+  }
+  .container .card .img {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .container .card .img .image {
+    height: 550px;
+    width: 350px;
+    display: flex inline-block;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  .container .card .text {
+    padding: 20px 35px;
+  }
+  .container .card .text h1 {
+    font-size: 35px;
+  }
+  .container .card .text .money h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 14.95% 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .card {
+    overflow: hidden;
+  }
+  .container .card .img {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .container .card .img .image {
+    height: 450px;
+    width: 300px;
+    display: flex inline-block;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  .container .card .text {
+    padding: 20px 35px 0 35px;
+  }
+  .container .card .text h1 {
+    font-size: 25px;
+  }
+  .container .card .text p {
+    font-size: 13px;
+  }
+  .container .card .text .money h1 {
+    font-size: 25px;
+  }
+  .container .card .text .money span {
+    -webkit-transform: translateY(-4.8px);
+            transform: translateY(-4.8px);
+  }
+}
+
+@media (max-width: 590px) {
+  body {
+    background-color: #f2ebe3;
+    height: 100vh;
+    width: 100vw;
+  }
+  .container {
+    padding: 5% 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .card {
+    overflow: hidden;
+    display: block;
+  }
+  .container .card .img {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    content: url(./image-product-mobile.jpg);
+  }
+  .container .card .img .image {
+    height: 600px;
+    width: 300px;
+    display: flex inline-block;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  .container .card .text {
+    padding: 20px 40px 0 40px;
+  }
+  .container .card .text h1 {
+    font-size: 43px;
+  }
+  .container .card .text p {
+    font-size: 14px;
+  }
+  .container .card .text .money h1 {
+    font-size: 39px;
+  }
+  .container .card .text .money span {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
